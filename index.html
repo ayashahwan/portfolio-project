@@ -8,36 +8,53 @@
 </head>
 <body>
   <!-- nav bar -->
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#about"> About </a>
     <a href="#team"> Team </a>
     <a href="#contact"> Contact </a>
   </nav>
   
-  <header>
+  <header  role="banner">
     <h1>Where creativity meets code , we build experiences that matter.</h1>
   </header>
 
-  <section id="about">
+  <section id="about" aria-label="About us">
     <h2> ABOUT US </h2>
-    <P> We build clean, accessible web applications. </P>
+    <P style="font-size: larger;">We are a team of passionate and dedicated developers who believe that great ideas deserve powerful execution. Our mission is to transform concepts into functional, user-friendly, and visually engaging digital solutions. With a strong focus on collaboration, innovation, and continuous learning, we combine technical expertise with creative thinking to deliver high-quality results. Whether it's building responsive websites or crafting seamless user experiences, we strive to create products that not only look good but also perform exceptionally. We don’t just write code , we build meaningful digital experiences that leave a lasting impact. </P>
   </section>
 
-  <section id="team">
+  <section id="team" aria-label="Our team">
     <h2>Our Team</h2>
-    <div>
-      <!-- <img src="imgs/pexels-linkedin-2182970 (1).jpg" alt="`Ahmad's profile photo"> -->
+    <div class="team-container">
+      <div class="team-member">
+        <img src="imgs/ayaa.jpeg" alt="`AYA's profile photo" class="img"><br>
+        <h3> Aya </h3>
+        <p>Fullstack Developer</p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/AYA" target="_blank"> Aya's Linkedin Profile </a>
+          <a href="https://github.com/ayashahwan" target="_blank"> Aya's GitHub Profile </a>
+          <a href="https://www.codewars.com/users/ayashahwan" target="_blank"> Aya's Codewars Profile </a><br>
+        </div>
+      </div>
+      <div class="team-member" >
+        <img src="imgs/pexels-linkedin-2182970 (1).jpg" alt="`AHMAD's profile photo" class="img"><br>
+        <h3> Ahmad </h3>
+        <p>Frontend Developer</p>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" aria-label="Contact us">
     <h2> Contact Us </h2>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="your Email">  
-      <textarea placeholder="Your Message"></textarea>
+    <form aria-label="Contact form">
+      <div class="form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="your Email">  
+        <textarea placeholder="Your Message"></textarea>
+        </div>
       <button type="submit"> Send </button>
     </form>    
   </section>
+  <script src="script.js"></script>
 </body>
 </html>

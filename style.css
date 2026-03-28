@@ -20,7 +20,7 @@ header{
   background-color: #f4f4f4;
   padding: 60px 20px;
   text-align: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 section{
@@ -51,12 +51,83 @@ input,textarea{
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-top: 5px;
 }
 
+textarea{
+  width: 340px;
+}
 button{
   padding: 5px;
   background-color: #472749;
   color: white;
   border: none;
   border-radius: 4px;
+  width: 350px;
+}
+
+.team-container{
+  display: flex;
+  gap: 150px;
+  justify-content: flex-start;
+  margin-left: 70px;
+}
+
+.team-member{
+  text-align: center;
+  max-width: 250px;
+  
+}
+
+div .img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  margin-left:auto;
+}
+
+.social-links a{
+  color: #472749;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    width: 100%;
+  }
+
+  header {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
 }
